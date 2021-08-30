@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather Details</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favico.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url(images/bg-image.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            height: 100vh;
+        }
+        #spinner {
+            display: none;
+        }
+        #error {
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            display: none;
+        }
+        .lead {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter a city ..." id="input-city">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-danger" id="button-search">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <div class="text-center" id="spinner" >
+                <div class="spinner-border" role="status">
+                </div>
+            </div>
+            <p class="text-center" id="error"></p>
+            <img class="m-auto hidden" id="icon" alt="">
+            <h1 class="hidden" id="name-city"></h1>
+            <h3 class="hidden"><span id="name-temp"></span></h3>
+            <h1 class="lead hidden" id="name-type"></h1>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
