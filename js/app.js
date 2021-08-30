@@ -30,10 +30,7 @@ function displayData(data) {
         showError('City Not Found!');
         return;
     }
-    const elements = document.getElementsByClassName('hidden');
-    for(ele of elements) {
-        ele.style.display = 'block';
-    }
+    setVisible('hidden');
     const type = data.weather[0].main;
     const id = data.weather[0].id;
     showValue('name-city',data.name);
@@ -50,10 +47,7 @@ function showError(errorMessage) {
 }
 document.getElementById('button-search').addEventListener('click',function() {
     const inputCity = getInputValue('input-city').toLowerCase();
-    const elements = document.getElementsByClassName('hidden');
-    for(ele of elements) {
-        ele.style.display = 'none';
-    }
+    setInvisible('hidden');
     setInvisible('error');
     if(inputCity == '') {
         showError('Please Enter a City!');

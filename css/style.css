@@ -1,0 +1,29 @@
+body {
+    background-image: url(/images/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+}
+#spinner {
+    display: none;
+}
+#error {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    display: none;
+}
+.lead {
+    font-size: 20px;
+    font-weight: 600;
+}
+#hidden {
+    border-radius: 20px !important;
+    padding: 50px 25px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    background-color: #49819a;
+    width: 30%;
+    margin: auto;
+}

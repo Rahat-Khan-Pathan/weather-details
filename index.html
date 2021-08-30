@@ -9,29 +9,7 @@
     <link rel="shortcut icon" href="images/favico.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-        body {
-            background-image: url(images/bg-image.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-
-            height: 100vh;
-        }
-        #spinner {
-            display: none;
-        }
-        #error {
-            font-size: 20px;
-            font-weight: 700;
-            color: white;
-            display: none;
-        }
-        .lead {
-            font-size: 20px;
-            font-weight: 600;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -44,16 +22,16 @@
                 </div>
             </div>
         </form>
-        <div class="weather-status text-white text-center">
-            <div class="text-center" id="spinner" >
-                <div class="spinner-border" role="status">
-                </div>
+        <div class="text-center" id="spinner" >
+            <div class="spinner-border" role="status">
             </div>
-            <p class="text-center" id="error"></p>
-            <img class="m-auto hidden" id="icon" alt="">
-            <h1 class="hidden" id="name-city"></h1>
-            <h3 class="hidden"><span id="name-temp"></span></h3>
-            <h1 class="lead hidden" id="name-type"></h1>
+        </div>
+        <p class="text-center" id="error"></p>
+        <div class="weather-status text-white text-center" id="hidden">
+            <img class="m-auto" id="icon" alt="">
+            <h1 id="name-city"></h1>
+            <h3><span id="name-temp"></span></h3>
+            <h1 class="lead" id="name-type"></h1>
         </div>
     </div>
     <script src="js/app.js"></script>
