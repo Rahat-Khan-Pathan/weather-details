@@ -32,3 +32,9 @@ body {
     width: 30%;
     margin: auto;
 }
+
+@media only screen and (max-width:776px) {
+    #hidden {
+        width: 80%;
+    }
+}
